@@ -59,7 +59,7 @@ Global Styles
 
 body {
   font-family: var(--ff-primary);
-  background: var(--clr-white);
+  background: red;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -204,9 +204,9 @@ Navbar
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   padding: 1rem 2rem;
 }
 .nav-toggle {
@@ -220,7 +220,7 @@ Navbar
 }
 .nav-toggle:hover {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 .nav-link {
   display: block;
@@ -259,9 +259,9 @@ Navbar
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     /* optional */
     flex-wrap: wrap;
   }
@@ -309,9 +309,9 @@ Hero
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
 }
 .hero-banner {
   text-align: center;
@@ -332,7 +332,13 @@ Hero
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(44, 174, 186, 0.7)), to(rgba(0, 0, 0, 0.7))),
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(44, 174, 186, 0.7)),
+        to(rgba(0, 0, 0, 0.7))
+      ),
       url('../images/main.jpeg') center/cover no-repeat;
     background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
       url('../images/main.jpeg') center/cover no-repeat;
@@ -375,13 +381,13 @@ About
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .about-img,
   .about-info {
     -webkit-box-flex: 0;
-            flex: 0 0 calc(50% - 2rem);
+    flex: 0 0 calc(50% - 2rem);
     align-self: center;
   }
 }
@@ -438,19 +444,19 @@ Services
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .service {
     -webkit-box-flex: 0;
-            flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(50% - 1rem);
     margin-bottom: 1rem;
   }
 }
 @media screen and (min-width: 992px) {
   .service {
     -webkit-box-flex: 0;
-            flex: 0 0 calc(33.33% - 1rem);
+    flex: 0 0 calc(33.33% - 1rem);
     margin-bottom: 1rem;
   }
 }
@@ -485,7 +491,7 @@ Featured Tours
 .tour-card:hover {
   box-shadow: var(--dark-shadow);
   -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 .tour-img-container {
   position: relative;
@@ -493,7 +499,7 @@ Featured Tours
 .tour-img {
   height: 15rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .tour-date {
   position: absolute;
@@ -512,9 +518,9 @@ Featured Tours
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 .tour-footer p {
@@ -534,17 +540,17 @@ Featured Tours
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .tour-card {
     -webkit-box-flex: 0;
-            flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(50% - 1rem);
   }
 }
 @media screen and (min-width: 1170px) {
   .tour-card {
     -webkit-box-flex: 0;
-            flex: 0 0 calc(33.33% - 2rem);
+    flex: 0 0 calc(33.33% - 2rem);
   }
 }
 
@@ -570,7 +576,7 @@ Contact
 
 .form-control {
   -webkit-box-flex: 1;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
   color: var(--clr-grey-5);
 }
 .form-control:focus {
@@ -620,13 +626,13 @@ Contact
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     gap: 2rem;
   }
   .contact-form {
     align-self: flex-start;
     -webkit-box-flex: 1;
-            flex: 1 1 auto;
+    flex: 1 1 auto;
     max-width: 100%;
   }
 }
@@ -641,13 +647,13 @@ Gallery
   display: flex;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 1rem;
   padding: 1rem;
 }
 .gallery-img-container {
   -webkit-box-flex: 1;
-          flex: 1 0 auto;
+  flex: 1 0 auto;
   border-radius: var(--radius);
 }
 
@@ -671,7 +677,7 @@ Gallery
 .gallery-img {
   height: 17rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   border-radius: var(--radius);
@@ -688,13 +694,13 @@ Gallery
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
   }
   .gallery-img-container {
     -webkit-box-flex: 0;
-            flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -703,19 +709,19 @@ Gallery
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
   }
   .gallery-img-container {
     -webkit-box-flex: 0;
-            flex: 0 0 calc(50% - 0.6rem);
+    flex: 0 0 calc(50% - 0.6rem);
   }
 }
 @media screen and (min-width: 992px) {
   .gallery-img-container {
     -webkit-box-flex: 0;
-            flex: 0 0 calc(25% - 1rem);
+    flex: 0 0 calc(25% - 1rem);
   }
 }
 /*
@@ -735,7 +741,7 @@ Footer
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
   gap: 1rem;
